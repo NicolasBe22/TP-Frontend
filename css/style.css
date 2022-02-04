@@ -1,0 +1,356 @@
+/***** RESET *****/
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/***** HEADER *****/
+
+header{
+    display: flex;
+    background-color: #bacddd;  
+}
+
+/* HEADER GAUCHE */
+.logo{
+    width: 25%;
+}
+
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+
+/* HEADER CENTRE */
+.espaceClient{
+    width: 50%;
+    text-align: center;
+}
+
+.espaceClient p{
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.fonctionEspaceClient{
+    display: flex;
+    margin: 10px; 
+    text-align: center;
+}
+
+.fonctionEspaceClient img{
+    width: 30px;
+    height: 30px;
+    align-items: flex-end;
+}
+
+.panier{
+    width: 33%;
+    /*border: 1px solid yellow;*/
+}
+
+.connexionEspaceClient{
+    width: 33%;
+    /*border: 1px solid yellow;*/
+}
+
+.commandes{
+    width: 33%;
+    /*border: 1px solid yellow;*/
+}
+
+/* HEADER DROITE */
+.autres{
+    width: 25%;
+}
+
+.recherche{
+    width: 100%;
+    text-align: right;
+    float: right;
+    margin: 10px;
+}
+
+.recherche img{
+    width: 15px;
+    height: 15px;
+}
+
+.langues{
+    float: right;
+    margin : 10px;
+}
+
+.langues img{
+    width: 50px;
+    height: 50px;
+}
+
+/***** NAV *****/
+
+nav{
+    width: 100%;
+    background-color: grey;
+    height: 10%;
+}
+
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav > ul::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: whitesmoke;
+}
+
+nav li{
+    list-style-type: none;
+    text-align: center;
+}
+
+.sousMenu{
+    display: none;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav li:hover .sousMenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    
+}
+nav ul li:hover{
+    background-color: red;
+}
+
+.sousMenu li{
+    width: 100%;
+    text-align: left;
+    background-color: grey;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+.sousMenu li a{
+    padding: 15px 25px;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: grey;
+    width: 100%;
+}
+
+nav ul li a:hover{
+    background-color: red;
+}
+
+.clearFloat{
+    clear: both;
+}
+
+#fixHeaderNav{  /* pour fixer header et nav */
+    position: fixed; 
+    top: 0;   
+    z-index: 1200;
+    width: 100%;
+}
+
+/***** MAIN *****/
+
+    /***** index *****/
+
+.photosCarroussel{
+    height: 250px;
+}
+
+main{
+    z-index: 1199;
+    margin-top: 206px;
+}
+
+.flecheHaut {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+}
+.flecheHaut img {
+    width: 50px;
+    height: 50px;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.contenuPage{
+    text-align: center;
+    font-size: 1.3em;
+
+}
+
+.collectionEnfants{
+    font-size: 1.8em;
+}
+
+.rassurer{
+    display: flex;
+}
+
+.paiementSecur{
+    width: 33%;
+}
+
+.satisfait{
+    width: 33%;
+    text-align: center;
+}
+
+.besoinAide{
+    width: 33%;
+    text-align: center;
+}
+
+
+
+.avisClients{
+    display: flex;
+}
+
+.avis{
+    width: 50%;
+    border: solid 1px black;
+    margin-left: 10px;
+}
+
+.avis img{
+    width: 100%;
+}
+
+    /***** collection Hommes et Femmes *****/
+
+.cinqProduits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.affichageProduit{
+    border: 1px solid blue;
+    text-align: center;
+    margin-top: 20px;
+    width: 17%;
+    height: 350px;
+}
+
+.affichageProduit img{
+    width: 100%;
+    height: 80%;
+}
+
+.titreAvis{
+    font-size: 1.2em;
+}
+
+    /***** fiche produit détaillée *****/
+
+.titreFicheProd{ 
+    padding-top: 20px;
+}
+
+.ficheProduit{
+    display: flex;
+}
+
+.photoPrix{
+    border: 1px solid blue;
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.photoPrix img{
+    height: auto;
+    width: auto;
+}
+
+.descTailleBouton{
+    border: 1px solid yellow;
+    margin: 10px 10px;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.suggestions{
+    display: flex;
+    margin-left: 20px;
+}
+
+.photoSuggestion{
+    border: 1px solid red;
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.suggestions p{
+    font-size: 1.2em;
+}
+
+    /***** carte points de vente *****/
+
+.containerCarte{
+    padding-top: 10px;
+}
+.texteCarte{
+    font-size: 1.3em;
+}
+
+    /***** coach *****/
+
+.coach{
+    padding-top: 10px;
+}
+
+    /***** contact *****/
+
+.contact{
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+
+
+
+/***** FOOTER *****/
+
+.navFooter{
+    height: 50px;
+    font-size: 0.7em;
+}

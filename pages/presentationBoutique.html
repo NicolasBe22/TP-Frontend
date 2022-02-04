@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../OwlCarousel/dist/assets/owl.carousel.css" /> 
+    <link rel="stylesheet" href="../OwlCarousel/dist/assets/owl.theme.default.css" />
+    <title>Le Petit Commerce</title>
+</head>
+<body>
+    <div>  <!-- div container page entière -->
+   
+    <div id="fixHeaderNav">   <!-- div container header + nav -->
+        <!-- EN-TETE -->
+        <!-- LOGO -->
+		<header>
+			<div class="logo">
+				<img src="../icones/logo.png" alt="iconLogo"/></a>
+			</div>
+        
+        <!-- ESPACE CLIENT -->
+            <div class="espaceClient">
+                <p>Mon espace client</p>
+                <div class="fonctionEspaceClient">
+                    <div class="panier">
+                    <a href="../pages/panier.html"> <img src="../icones/panier.png" alt="iconPanier"/></a>
+                    </div>
+
+                    <div class="connexionEspaceClient">
+                    <a href="../formConnexion.html"> <img src="../icones/espaceClient.png" alt="iconEspClient"/></a>
+                    </div>
+
+                    <div class="commandes">
+                    <a href="../suiviCommandes.html">Suivre mes commandes</a>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- AUTRES FONCTONNALITES -->
+            <div class="autres">
+                <div class="langues">
+                    <button> <img src="../icones/drapeauFrGB.png" alt="iconDrap" onclick="changerLangue()"> </button>
+                </div>
+
+                <div class="recherche">
+                    <input type="text" name="recherche" id="recherche" placeholder="Recherchez sur le site">
+                    <button type="button" onclick="recherche()"> <img src="../icones/loupe.png"></button>
+                </div>             
+            </div> 
+
+		</header>
+
+    <!--------------- NAV ----------------->
+        <nav>
+            <ul>
+                <li><a href="../index.html">ACCUEIL</a>
+                <li><a href="../pages/collectionHommes.html">COLLECTION HOMMES</a>
+                    <ul class="sousMenu">
+                        <li><a href="../pages/pantalonsHommes.html">Pantalons</a></li>
+                        <li><a href="../pages/chemisesHommes.html">Chemises</a></li>
+                        <li><a href="../pages/tshirtHommes.html">T-shirts/Polos</a></li>
+                        <li><a href="../pages/chaussuresHommes.html">Chaussures</a></li>                            
+                        <li><a href="../pages/manteauxHommes.html">Manteaux</a></li>                            
+                    </ul>
+                </li>
+                <li><a href="../pages/collectionFemmes.html">COLLECTION FEMMES</a>
+                    <ul class="sousMenu">
+                        <li><a href="../pages/robesFemmes.html">Robes</a></li>
+                        <li><a href="../pages/chaussuresFemmes.html">Chaussures</a></li>
+                        <li><a href="../pages/manteauxFemmes.html">Manteaux</a></li>
+                        <li><a href="../pages/echarpesFemmes.html">Echarpes</a></li>
+                        <li><a href="../pages/chemisiersFemmes.html">Chemisiers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">POINTS DE VENTE</a>
+                    <ul class="sousMenu">
+                        <li><a href="../pages/moselle.html">Paris - R. de la Moselle</a></li>
+                        <li><a href="../pages/sebastopol.html">Paris - Bd Sébastopol</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/coach.html">COACH</a>
+                </li>
+                <li><a href="#">LA BOUTIQUE</a>
+                    <ul class="sousMenu">
+                        <li><a href="../pages/presentationBoutique.html">Qui sommes-nous ?</a></li>
+                        <li><a href="../pages/formRecrutement">Recrutement</a></li>
+                        <li><a href="../pages/evenements.html">Evènements</a></li>
+                        <li><a href="../pages/presse.html">Presse</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/actualites.html">ACTUALITES</a>
+                </li>
+                <li><a href="../pages/contact.html">CONTACT</a>    
+                </li>
+            </ul>
+            <div class="clearFloat"></div>
+        </nav>
+    </div>
+
+    <main>
+       <h2>Qui sommes-nous ?</h2>
+        
+        
+    </main>
+
+    
+
+        
+
+        
+
+    
+    <!--------------- FOOTER ----------------->
+        <footer>
+            <nav class="navFooter">
+                <ul>
+                    <li><a href="../pages/contact.html">Contact</a>
+                    </li>
+                    <li><a href="../pages/mlpc.html">Mentions légales/Politique de confidentialité</a>
+                    </li>
+                    <li><a href="../pages/cgv.html">CGV</a>
+                    </li>
+                    <li><a href="../pages/planSite.html">Plan du site</a>
+                    </li>
+                    <li><a href="../pages/formNewsletter.html">S'inscrire à la Newsletter</a>
+                    </li>
+                    <li><a href="../pages/partageRS.html">Partager vers les réseaux sociaux</a>
+                    </li>
+                    <li><a href="#" onclick="imprimerPage()">Imprimer la page</a>    <!--fonction imprimer ! -->
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+
+    </div>  <!-- fin div container -->
+
+    <script src="../jQuery/jquery.js"></script>
+    <script src="../OwlCarousel/dist/owl.carousel.js"></script> 
+    <script src="../js/javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.css" /> 
+    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.css" />
+    <title>Le Petit Commerce</title>
+</head>
+<body>
+    <div>  <!-- div container page entière -->
+   
+    <div id="fixHeaderNav">   <!-- div container header + nav -->
+        <!-- EN-TETE -->
+        <!-- LOGO -->
+		<header>
+			<div class="logo">
+				<img src="icones/logo.png" alt="IconLogo"/></a>
+			</div>
+        
+        <!-- ESPACE CLIENT -->
+            <div class="espaceClient">
+                <p>Mon espace client</p>
+                <div class="fonctionEspaceClient">
+                    <div class="panier">
+                    <a href="panier.html"> <img src="icones/panier.png" alt="iconPanier"/></a>
+                    </div>
+
+                    <div class="connexionEspaceClient">
+                    <a href="formConnexion.html"> <img src="icones/espaceClient.png" alt="iconEspClient"/></a>
+                    </div>
+
+                    <div class="commandes">
+                    <a href="suiviCommandes.html">Suivre mes commandes</a>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- AUTRES FONCTONNALITES -->
+            <div class="autres">
+                <div class="langues">
+                    <button> <img src="icones/drapeauFrGB.png" alt="iconDrap" onclick="changerLangue()"> </button>
+                </div>
+
+                <div class="recherche">
+                    <input type="text" name="recherche" id="recherche" placeholder="Recherchez sur le site">
+                    <button type="button" onclick="recherche()"> <img src="icones/loupe.png"></button>
+                </div>             
+            </div> 
+
+		</header>
+
+    <!--------------- NAV ----------------->
+        <nav>
+            <ul>
+                <li><a href="index.html">ACCUEIL</a>
+                <li><a href="collectionHommes.html">COLLECTION HOMMES</a>
+                    <ul class="sousMenu">
+                        <li><a href="pantalonsHommes.html">Pantalons</a></li>
+                        <li><a href="chemisesHommes.html">Chemises</a></li>
+                        <li><a href="tshirtHommes.html">T-shirts/Polos</a></li>
+                        <li><a href="chaussuresHommes.html">Chaussures</a></li>                            
+                        <li><a href="manteauxHommes.html">Manteaux</a></li>                            
+                    </ul>
+                </li>
+                <li><a href="collectionFemmes.html">COLLECTION FEMMES</a>
+                    <ul class="sousMenu">
+                        <li><a href="robesFemmes.html">Robes</a></li>
+                        <li><a href="chaussuresFemmes.html">Chaussures</a></li>
+                        <li><a href="manteauxFemmes.html">Manteaux</a></li>
+                        <li><a href="echarpesFemmes.html">Echarpes</a></li>
+                        <li><a href="chemisiersFemmes.html">Chemisiers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">POINTS DE VENTE</a>
+                    <ul class="sousMenu">
+                        <li><a href="moselle.html">Paris - R. de la Moselle</a></li>
+                        <li><a href="sebastopol.html">Paris - Bd Sébastopol</a></li>
+                    </ul>
+                </li>
+                <li><a href="coach.html">COACH</a>
+                </li>
+                <li><a href="#">LA BOUTIQUE</a>
+                    <ul class="sousMenu">
+                        <li><a href="presentationBoutique.html">Qui sommes-nous ?</a></li>
+                        <li><a href="formRecrutement">Recrutement</a></li>
+                        <li><a href="evenements.html">Evènements</a></li>
+                        <li><a href="presse.html">Presse</a></li>
+                    </ul>
+                </li>
+                <li><a href="actualites.html">ACTUALITES</a>
+                </li>
+                <li><a href="contact.html">CONTACT</a>    
+                </li>
+            </ul>
+            <div class="clearFloat"></div>
+        </nav>
+    </div>
+
+
+        <main>
+        <div>
+            <div class="owl-carousel owl-theme">
+                <div> <img src="img/photosBoutique/devanture.png" alt="image1" class="photosCarroussel" /> </div>
+                <div> <img src="img/photosBoutique/interieur1.png" alt="image2" class="photosCarroussel" /> </div>
+                <div> <img src="img/photosBoutique/interieur2.png" alt="image3" class="photosCarroussel" /> </div>
+                <div> <img src="img/photosBoutique/interieur3.png" alt="image4" class="photosCarroussel" /> </div>
+                <div> <img src="img/photosBoutique/interieur4.png" alt="image5" class="photosCarroussel" /> </div>
+                <div> <img src="img/photosBoutique/vendeuse.png" alt="image6" class="photosCarroussel" /> </div>
+                <div> <img src="img/photosBoutique/clients1.png" alt="image7" class="photosCarroussel" /> </div>     
+                <div> <img src="img/photosBoutique/clients2.png" alt="image8" class="photosCarroussel" /> </div>     
+                <div> <img src="img/photosBoutique/clients3.png" alt="image9" class="photosCarroussel" /> </div>     
+            </div>
+            <div class="contenuPage">
+                <h1>BIENVENUE DANS NOTRE BOUTIQUE EN LIGNE !</h1>
+
+            </div>
+            
+        </div>
+        </main>
+
+        <a href="#fixHeaderNav">Revenir en haut</a>
+
+    
+    <!--------------- FOOTER ----------------->
+        <footer>
+            <nav class="navFooter">
+                <ul>
+                    <li><a href="contact.html">Contact</a>
+                    </li>
+                    <li><a href="mlpc.html">Mentions légales/Politique de confidentialité</a>
+                    </li>
+                    <li><a href="cgv.html">CGV</a>
+                    </li>
+                    <li><a href="planSite.html">Plan du site</a>
+                    </li>
+                    <li><a href="formNewsletter.html">S'inscrire à la Newsletter</a>
+                    </li>
+                    <li><a href="partageRS.html">Partager vers les réseaux sociaux</a>
+                    </li>
+                    <li><a href="#" onclick="imprimerPage()">Imprimer la page</a>    <!--fonction imprimer ! -->
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+
+    </div>  <!-- fin div container -->
+
+    <script src="jQuery/jquery.js"></script>
+    <script src="./OwlCarousel/dist/owl.carousel.js"></script> 
+    <script src="js/javascript.js"></script>
+</body>
+</html>
